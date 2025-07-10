@@ -21,6 +21,11 @@ const Header = () => {
                 About
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink to="/login" className={({isActive}) => isActive ? "active" : ""}>
+                Login
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>
@@ -28,4 +33,4 @@ const Header = () => {
   );
 };
 
-export default Header; 
+export default Header;
