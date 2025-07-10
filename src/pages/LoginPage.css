@@ -1,0 +1,126 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.left-section {
+  flex: 1;
+  background: linear-gradient(to bottom right, #042c2c, #061f1f);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.right-section {
+  flex: 1;
+  background-color: #0f0f0f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00f5d4;
+  display: flex;
+  align-items : center;
+  gap: 10px;
+}
+.emoji-brain {
+  font-size: 2.5rem;
+  color: #00f5d4;
+  display: inline-block;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #a0f4ea;
+  margin-bottom: 20px;
+}
+
+.ai-face {
+  background-color: #00f5d4;
+  border-radius: 50%;
+  padding: 30px;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.welcome-text {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.features button {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px auto;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 80%;
+}
+
+.giris-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.giris-sub {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.form input {
+  width: 80%;
+  max-width: 350px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 14px;
+}
+
+.giris-button {
+  background: linear-gradient(to right, #00f5d4, #00cfc8);
+  border: none;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.giris-button:hover {
+  opacity: 0.8;
+}
+
+.register {
+  margin-top: 15px;
+  color: #999;
+}
+
+.kayit {
+  color: #00f5d4;
+  cursor: pointer;
+}
