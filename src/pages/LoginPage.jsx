@@ -1,15 +1,22 @@
 import React from "react";
-import "./LoginPage.css";
+import { useNavigate } from "react-router-dom";
+import "./LoginAndRegisterPage.css";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
+
+  const handleRegisterClick = () => {
+    navigate('/register');
+  };
+
   return (
     <div className="login-container">
       {/* Sol Kısım */}
       <div className="left-section">
         <h1 className="logo">
-  <span role="img" aria-label="brain" className="emoji-brain">🧠</span>
-  Tutor AI
-</h1>
+          <span role="img" aria-label="brain" className="emoji-brain">🧠</span>
+          Tutor AI
+        </h1>
 
         <p className="subtitle">Yapay Zeka ile Öğrenme Deneyimi</p>
         <div className="ai-face">😊</div>
@@ -34,7 +41,7 @@ const LoginPage = () => {
           <input type="password" placeholder="Şifreniz" />
           <button type="submit" className="giris-button">Giriş Yap</button>
         </form>
-        <p className="register">Hesabın yok mu? <span className="kayit">Kayıt Ol</span></p>
+        <p className="register">Hesabın yok mu? <span className="kayit" onClick={handleRegisterClick}>Kayıt Ol</span></p>
       </div>
     </div>
   );
