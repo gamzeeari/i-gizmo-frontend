@@ -1,0 +1,102 @@
+/* src/pages/MaterialsPage.css */
+
+.materials-container {
+  background-color: #0f0f0f;
+  color: white;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;   /* Dikey ortalama */
+  align-items: center;       /* Yatay ortalama */
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.dropzone-box {
+  width: 160%;
+  max-width: 450px;
+  height: 300px;
+  border: 2px dashed gray;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  background-color:#1a1a1a
+  
+}
+
+.paperclip {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.dropzone-box h2 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.dropzone-box .link {
+  color: #00cc99;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.file-types {
+  margin-top: 10px;
+}
+
+.file-types span {
+  display: inline-block;
+  background-color: #003322;
+  color: #00cc99;
+  padding: 5px 10px;
+  margin: 5px;
+  margin-top: 25px;
+  border-radius: 20px;
+  font-size: 17px;
+}
+
+.alt-baslik {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.other-methods {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  width: 320px;
+  min-height: 200px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #222;
+}
+
+.card h4 {
+  margin: 12px 0 8px;
+  font-size: 18px;
+  padding-top: 6px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+  padding-top: 4px;
+}
