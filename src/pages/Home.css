@@ -18,7 +18,7 @@
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 22px !important;
   font-weight: bold;
   background: linear-gradient(to right, #7bbfdc, #65b896, #2f97c3);
   -webkit-background-clip: text;
@@ -186,6 +186,6 @@ nav li.active {
   background: linear-gradient(to right, #7bbfdc, #65b896, #2f97c3);
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 26px;
+  font-size: 22px !important;
   vertical-align: middle;
 }
