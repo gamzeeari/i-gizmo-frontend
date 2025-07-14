@@ -1,4 +1,4 @@
-// src/pages/MaterialsPage.jsx
+
 import React from "react";
 import "./MaterialsPage.css";
 import { FaLink, FaMicrophone, FaCamera } from "react-icons/fa";
@@ -6,14 +6,15 @@ import { Paperclip } from "lucide-react";
 const MaterialsPage = () => {
   return (
     <div className="materials-container">
-      {/* Üst Kutu - Sürükle Bırak */}
+      
       <div className="dropzone-box">
         <div className="paperclip">
             <Paperclip size= {24} color ="#ccc"/>
         </div>    
         <h2>Dosyalarınızı buraya sürükleyin</h2>
         <p>
-          veya <span className="link">göz atmak için tıklayın</span>
+          <span className="or-text">
+          veya      </span>< span className="link">göz atmak için tıklayın</span>
         </p>
         <div className="file-types">
           <span>PDF</span>
@@ -23,10 +24,10 @@ const MaterialsPage = () => {
         </div>
       </div>
 
-      {/* Alt Başlık */}
+      
       <h3 className="alt-baslik">Diğer Yöntemler</h3>
 
-      {/* Diğer Yöntemler Kartları */}
+      
       <div className="other-methods">
         <div className="card">
           <FaLink size={32} />

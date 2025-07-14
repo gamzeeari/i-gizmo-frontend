@@ -1,49 +1,63 @@
-import React from 'react';
-import Card from '../components/Card';
-import './Home.css';
-
+import React from "react";
+import "./Home.css";
 const Home = () => {
-  const cards = [
-    {
-      id: 1,
-      title: 'Card 1',
-      content: 'This is an example card.',
-      imageUrl: 'https://via.placeholder.com/300x200'
-    },
-    {
-      id: 2,
-      title: 'Card 2',
-      content: 'Here is the second card content.',
-      imageUrl: 'https://via.placeholder.com/300x200'
-    },
-    {
-      id: 3,
-      title: 'Card 3',
-      content: 'Third card content is here.',
-      imageUrl: 'https://via.placeholder.com/300x200'
-    }
-  ];
-
   return (
     <div className="home-page">
-      <h1>Home Page</h1>
-      <p className="welcome-text">Welcome! This is the home page of the React Template project.</p>
       
-      <section className="cards-section">
-        <h2>Example Cards</h2>
-        <div className="cards-container">
-          {cards.map(card => (
-            <Card 
-              key={card.id}
-              title={card.title}
-              content={card.content}
-              imageUrl={card.imageUrl}
-            />
-          ))}
+      <aside className="sidebar">
+        <div>
+          <h1 className="logo">
+  <span className="brain-icon">🧠</span> Tutor AI
+</h1>
+
+          <p className="tagline">Akıllı Özetleme Platformu</p>
+          <nav>
+            <ul>
+              <li className="active">🏠 Ana Sayfa</li>
+              <li>📁 Materyal Yükle</li>
+              <li>📚 Çalışma</li>
+            </ul>
+          </nav>
         </div>
-      </section>
+
+        <div className="profile">
+          <div className="avatar">👤</div>
+          <div>
+            <p className="username">Ahmet Yılmaz</p>
+            <p className="userrole">Öğrenci</p>
+          </div>
+        </div>
+      </aside>
+
+      
+      <main className="main-content">
+        <h2 className="headline">
+          Hangi materyali özetlemek <br /> istiyorsunuz?
+        </h2>
+        <p className="subtext">AI ile saniyeler içinde akıllı özetler oluşturun</p>
+
+        <div className="cards">
+          <div className="card">
+            <div className="emoji">📄</div>
+            <h3>PDF Özetleme</h3>
+            <p>PDF dosyalarınızı yükleyin, AI ile özetini çıkarın</p>
+          </div>
+          <div className="card">
+            <div className="emoji">🎥</div>
+            <h3>Video Özetleme</h3>
+            <p>YouTube videolarından ders notları oluşturun</p>
+          </div>
+          <div className="card">
+            <div className="emoji">📝</div>
+            <h3>Ders Notu Analizi</h3>
+            <p>El yazısı notlarınızı dijitalleştirin ve özetleyin</p>
+          </div>
+        </div>
+
+        <button className="start-button">Özetlemeye Başla</button>
+      </main>
     </div>
   );
 };
 
-export default Home; 
+export default Home;

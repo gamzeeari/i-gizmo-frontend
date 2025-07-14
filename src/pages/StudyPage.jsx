@@ -3,7 +3,7 @@ import React from "react";
 const StudyPage = () => {
   return (
     <div className="flex h-screen bg-stone-950 text-white font-nunito py-6">
-      {/* Sidebar */}
+      
       <aside className="w-64 bg-zinc-900 p-6 flex flex-col justify-between shadow-md min-h-full">
         <div>
           <nav className="space-y-6 text-lg">
@@ -23,11 +23,11 @@ const StudyPage = () => {
         </div>
       </aside>
 
-      {/* Main */}
+      
       <main className="flex-1 flex flex-col p-6 gap-6 max-h-[600px] overflow-y-auto mt-10">
-        {/* Genel Chat Kutusu */}
+        
         <div className="flex flex-col flex-grow bg-zinc-900 p-8 rounded-2xl shadow-inner overflow-y-auto text-lg gap-5 max-w-3xl mx-auto w-full">
-          {/* AI Header */}
+          
           <div className="flex items-center gap-4 mb-2">
             <div className="bg-gradient-to-r from-[#7bbfdc] via-[#65b896] to-[#2f97c3] p-3 rounded-full text-black text-2xl">🤖</div>
             <div>
@@ -36,7 +36,7 @@ const StudyPage = () => {
             </div>
           </div>
 
-          {/* Chat Bubbles */}
+          
           <div className="space-y-6 mt-4 flex-1">
             <div className="bg-zinc-800 p-4 rounded-xl max-w-lg w-fit text-sm self-start">
               Merhaba! Ben senin AI öğretmenin. Hangi konuda yardıma ihtiyacın var?
@@ -49,7 +49,7 @@ const StudyPage = () => {
             </div>
           </div>
 
-          {/* Input alanı */}
+          
           <div className="flex text-lg gap-4 pt-4 border-t border-zinc-700">
             <input
               type="text"
@@ -63,7 +63,7 @@ const StudyPage = () => {
         </div>
       </main>
 
-      {/* Araçlar Paneli */}
+      
       <aside className="w-96 bg-stone-950 p-6 shadow-md text-lg max-h-[600px] overflow-y-auto mt-10">
         <div className="bg-zinc-900 p-6 rounded-2xl shadow-inner h-full">
           <h3 className="text-2xl font-bold mb-6 text-white">Araçlar</h3>

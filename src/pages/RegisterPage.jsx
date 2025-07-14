@@ -11,7 +11,7 @@ const RegisterPage = () => {
 
   return (
     <div className="login-container">
-      {/* Sol Kısım */}
+      
       <div className="left-section">
         <h1 className="logo">
           <span role="img" aria-label="brain" className="emoji-brain">🧠</span>
@@ -32,7 +32,7 @@ const RegisterPage = () => {
         </div>
       </div>
 
-      {/* Sağ Kısım */}
+      
       <div className="right-section">
         <h2 className="giris-title">Hesap Oluştur</h2>
         <p className="giris-sub">Yeni bir öğrenme deneyimi başlat</p>
