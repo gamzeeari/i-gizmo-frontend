@@ -1,0 +1,162 @@
+/* src/pages/ProfilePage.css */
+
+:root {
+  --gradient-color1: #00f5d4;
+  --gradient-color2: #00a9cf;
+}
+
+.profile-container {
+  background-color: #0f0f0f;
+  color: white;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-header h1,
+.profile-header p {
+  text-align: left;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-icon {
+  font-size: 50px;
+  margin-bottom: 5px;
+  background: linear-gradient(to right, var(--gradient-color1), var(--gradient-color2));
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 5px auto;
+  box-shadow: 0 0 5px rgba(0, 245, 212, 0.6);
+}
+
+.profile-header h1 {
+  font-size: 2rem;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.profile-header p {
+  color: #ccc;
+  font-size: 1.3rem;
+  margin-top: 0px;
+  position: relative;
+}
+
+.profile-header p::after {
+  content: '';
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  width: 210px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.section-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: left;
+  max-width: 830px;
+  width: 100%;
+  margin-left: 180px;
+}
+
+.progress-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.progress-card {
+  background-color: #1a1a1a;
+  border-radius: 14px;
+  border: 1px solid #333;
+  padding: 24px 24px 12px 24px;
+  text-align: center;
+  width: 200px;
+  min-height: 200px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-card h4 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.percentage {
+  color: #00cc99;
+  float: right;
+}
+
+.progress-bar {
+  background-color: #333;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+}
+
+.stat-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #ccc;
+  opacity: 0.6;
+}
+
+.continue-btn {
+  background: linear-gradient(to right, var(--gradient-color1), var(--gradient-color2));
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 10px;
+}
