@@ -2,10 +2,10 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
-// Layouts
+
 import MainLayout from './layouts/MainLayout';
 
-// Pages
+
 import Home from './pages/Home';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
@@ -21,12 +21,13 @@ function App() {
       <Routes>
   <Route path="/login" element={<LoginPage />} />
   <Route path="/register" element={<RegisterPage />} />
-  <Route path="/materials" element={<MaterialsPage />} /> {/* <-- MainLayout dışında */}
+  <Route path="/materials" element={<MaterialsPage />} /> 
+  <Route path="study" element={<StudyPage />} />{}
   
   <Route path="/" element={<MainLayout />}>
     <Route index element={<Home />} />
     <Route path="about" element={<About />} />
-    <Route path="study" element={<StudyPage />} />
+    
     <Route path="profile" element={<ProfilePage />} />
     <Route path="*" element={<NotFound />} />
   </Route>
