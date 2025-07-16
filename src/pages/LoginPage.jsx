@@ -14,11 +14,20 @@ const LoginPage = () => {
       <div className="left-section">
         <h1 className="logo">
           <span role="img" aria-label="brain" className="emoji-brain">🧠</span>
-          Tutor AI
+          <span className="logo-text">Tutor AI</span>
         </h1>
 
         <p className="subtitle">Yapay Zeka ile Öğrenme Deneyimi</p>
-        <div className="ai-face">😊</div>
+        <div className="ai-face">
+  <div className="emoji-face">
+    <div className="eyes">
+      <div className="eye"></div>
+      <div className="eye"></div>
+    </div>
+    <div className="smile"></div>
+  </div>
+</div>
+
         <p className="welcome-text">
           "Merhaba! Ben senin kişisel AI öğretmenin. <br />
           Birlikte öğrenmeye hazır mısın?"

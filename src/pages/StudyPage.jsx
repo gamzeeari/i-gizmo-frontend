@@ -7,9 +7,9 @@ const StudyPage = () => {
       <aside className="w-64 bg-zinc-900 p-6 flex flex-col justify-between shadow-md min-h-full">
         <div>
           <nav className="space-y-6 text-lg">
-            <div className="text-gray-400 hover:text-white transition cursor-pointer text-left pl-0 ml-0">🏠 Ana Sayfa</div>
-            <div className="text-gray-400 hover:text-white transition cursor-pointer text-left pl-0 ml-0">📁 Materyal Yükle</div>
-            <div className="bg-emerald-600 text-white px-4 py-2 rounded-lg font-semibold shadow text-lg text-left pl-0 ml-0">
+            <div className="text-gray-400 hover:text-white transition cursor-pointer text-left pl-0 ml-0 opacity-80">🏠 Ana Sayfa</div>
+            <div className="text-gray-400 hover:text-white transition cursor-pointer text-left pl-0 ml-0 opacity-80">📁 Materyal Yükle</div>
+            <div className="bg-emerald-600 text-white px-4 py-2 rounded-lg font-semibold shadow text-lg text-left pl-0 ml-0 opacity-80">
               📖 Çalışma
             </div>
           </nav>
@@ -38,13 +38,13 @@ const StudyPage = () => {
 
           
           <div className="space-y-6 mt-4 flex-1">
-            <div className="bg-zinc-800 p-4 rounded-xl max-w-lg w-fit text-sm self-start">
+            <div className="bg-zinc-800 p-4 rounded-xl max-w-lg w-fit text-sm self-start opacity-80">
               Merhaba! Ben senin AI öğretmenin. Hangi konuda yardıma ihtiyacın var?
             </div>
-            <div className="bg-gradient-to-r from-[#7bbfdc] via-[#65b896] to-[#2f97c3] text-white p-4 rounded-xl max-w-md w-fit text-sm self-end ml-auto">
+            <div className="bg-gradient-to-r from-[#7bbfdc] via-[#65b896] to-[#2f97c3] text-white p-4 rounded-xl max-w-md w-fit text-sm self-end ml-auto opacity-80">
               Matematik integral konusunu anlat
             </div>
-            <div className="bg-zinc-800 p-4 rounded-xl max-w-lg w-fit text-sm self-start">
+            <div className="bg-zinc-800 p-4 rounded-xl max-w-lg w-fit text-sm self-start opacity-80">
               İntegral, matematikte türevin tersi işlemdir. Bir fonksiyonun altında kalan alanı hesaplamamızı sağlar.
             </div>
           </div>
@@ -54,7 +54,7 @@ const StudyPage = () => {
             <input
               type="text"
               placeholder="Sorunuzu yazın..."
-              className="flex-grow px-6 py-3 bg-zinc-800 text-white rounded-xl outline-none"
+              className="flex-grow px-4 py-3 bg-zinc-800 text-white rounded-xl outline-none opacity-80"
             />
             <button className="bg-gradient-to-r from-[#7bbfdc] via-[#65b896] to-[#2f97c3] text-white px-6 py-3 rounded-xl font-semibold">
               Gönder
@@ -70,15 +70,15 @@ const StudyPage = () => {
           <div className="space-y-6">
             <button className="bg-zinc-800 w-full h-24 rounded-xl shadow hover:bg-gray-700 transition flex flex-col items-center justify-center text-white">
               <div className="text-3xl mb-2">📝</div>
-              <span className="text-base font-semibold">Quiz Oluştur</span>
+              <span className="text-base font-bold">Quiz Oluştur</span>
             </button>
             <button className="bg-zinc-800 w-full h-24 rounded-xl shadow hover:bg-gray-700 transition flex flex-col items-center justify-center text-white">
               <div className="text-3xl mb-2">📚</div>
-              <span className="text-base font-semibold">Flash Kartlar</span>
+              <span className="text-base font-bold">Flash Kartlar</span>
             </button>
             <button className="bg-zinc-800 w-full h-24 rounded-xl shadow hover:bg-gray-700 transition flex flex-col items-center justify-center text-white">
               <div className="text-3xl mb-2">📊</div>
-              <span className="text-base font-semibold">Özet Görüntüle</span>
+              <span className="text-base font-bold">Özet Görüntüle</span>
             </button>
           </div>
         </div>

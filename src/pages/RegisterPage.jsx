@@ -19,7 +19,15 @@ const RegisterPage = () => {
         </h1>
 
         <p className="subtitle">Yapay Zeka ile Öğrenme Deneyimi</p>
-        <div className="ai-face">😊</div>
+         <div className="ai-face">
+  <div className="emoji-face">
+    <div className="eyes">
+      <div className="eye"></div>
+      <div className="eye"></div>
+    </div>
+    <div className="smile"></div>
+  </div>
+</div>
         <p className="welcome-text">
           "Merhaba! Ben senin kişisel AI öğretmenin. <br />
           Birlikte öğrenmeye hazır mısın?"

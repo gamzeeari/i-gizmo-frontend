@@ -27,10 +27,11 @@
 
 .tagline {
   font-size: 13px;
-  color: #aaaaaa;
+  color: #666666;
   margin-bottom: 30px;
   font-style: italic;
   text-align: left;
+  font-weight: 600;
 
 }
 
@@ -49,6 +50,7 @@ nav li {
   cursor: pointer;
   transition: 0.3s;
   color: #666666;
+  font-weight: 600;
 }
 
 
@@ -90,6 +92,7 @@ nav li.active {
 .userrole {
   font-size: 12px;
   color: #666666;
+  font-weight: 600;
 }
 
 
@@ -124,6 +127,7 @@ nav li.active {
   color: #666666;
   margin-top: 10px;
   font-size: 16;
+  font-weight: 600;
 }
 
 .cards {
@@ -149,26 +153,28 @@ nav li.active {
 }
 
 .emoji {
-  font-size: 40px;
-  margin-bottom: 15px;
+  font-size: 50px;
+  margin-bottom: 10px;
   
 }
 
 .card h3 {
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: 750;
 }
 
 .card p {
-  font-size: 16px;
+  font-size: 18px;
   color: #666666;
+  font-weight: 600;
+  
 }
 
 
 .start-button {
   background: linear-gradient(to right, #7bbfdc, #65b896, #2f97c3);
   border: none;
-  color: #000000;
+  color: #d5d7d3;
   padding: 12px 30px;
   border-radius: 30px;
   font-weight: bold;
