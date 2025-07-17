@@ -1,0 +1,258 @@
+/* StudyPage.css */
+
+.study-container {
+  display: flex;
+  height: 100vh;
+  background-color: #0c0a09;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  padding: 1.5rem 0;
+}
+
+.sidebar {
+  width: 16rem;
+  background-color: #18181b;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  min-height: 100%;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.nav-item {
+  color: #9ca3af;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 0;
+  opacity: 0.8;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: white;
+}
+
+.nav-item.active {
+  background-color: #059669;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+  background-color: #27272a;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.user-avatar {
+  background: linear-gradient(to right, #7bbfdc, #65b896, #2f97c3);
+  padding: 0.75rem;
+  border-radius: 50%;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.user-info p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.user-info .user-role {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  max-height: 600px;
+  overflow-y: auto;
+  margin-top: 2.5rem;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #18181b;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  font-size: 1.125rem;
+  gap: 1.25rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.ai-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.ai-avatar {
+  background: linear-gradient(to right, #7bbfdc, #65b896, #2f97c3);
+  padding: 0.75rem;
+  border-radius: 50%;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.ai-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.ai-subtitle {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin: 0.25rem 0 0 0;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex: 1;
+}
+
+.message {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  opacity: 0.8;
+  max-width: 28rem;
+  width: fit-content;
+}
+
+.message.ai {
+  background-color: #27272a;
+  align-self: flex-start;
+}
+
+.message.user {
+  background: linear-gradient(to right, #7bbfdc, #65b896, #2f97c3);
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.chat-input-container {
+  display: flex;
+  font-size: 1.125rem;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #3f3f46;
+}
+
+.chat-input {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  background-color: #27272a;
+  color: white;
+  border-radius: 0.75rem;
+  border: none;
+  outline: none;
+  opacity: 0.8;
+}
+
+.chat-input::placeholder {
+  color: #9ca3af;
+}
+
+.send-button {
+  background: linear-gradient(to right, #7bbfdc, #65b896, #2f97c3);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.tools-sidebar {
+  width: 24rem;
+  background-color: #0c0a09;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  font-size: 1.125rem;
+  max-height: 600px;
+  overflow-y: auto;
+  margin-top: 2.5rem;
+}
+
+.tools-container {
+  background-color: #18181b;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.tools-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.tools-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tool-button {
+  background-color: #27272a;
+  width: 100%;
+  height: 6rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.tool-button:hover {
+  background-color: #374151;
+}
+
+.tool-icon {
+  font-size: 1.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.tool-label {
+  font-size: 1rem;
+  font-weight: bold;
+}
