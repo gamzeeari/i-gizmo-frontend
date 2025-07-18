@@ -1,70 +1,142 @@
-# React Template Project
+# i-Gizmo Frontend
 
-This project is a template that demonstrates the folder structure, component organization, and code layout used in React applications for interns and beginner developers.
-
-## Folder Structure
-
-```
-src/
-  ├── components/       # Reusable components
-  ├── layouts/          # Page layouts
-  ├── pages/            # Pages
-  ├── hooks/            # Custom React hooks
-  ├── services/         # API requests, data operations
-  ├── utils/            # Helper functions
-  ├── assets/           # Images, fonts, etc.
-  ├── context/          # React contexts
-  ├── App.js            # Main application component
-  └── index.js          # Entry point
-```
+React frontend application for the i-Gizmo educational platform.
 
 ## Features
 
-- Modern React structure (Functional Components and Hooks)
-- Page management with React Router
-- Modular CSS approach
-- Organized folder structure
-- Reusable components
-- Custom hook examples
+- User authentication (login/register)
+- AI-powered study chat interface
+- File upload and material management
+- User profile with progress tracking
+- Responsive design with dark theme
+
+## Project Structure
+
+```
+src/
+  ├── components/           # Reusable UI components
+  │   ├── Card.js          # Generic card component
+  │   ├── Header.js        # Navigation header
+  │   └── Footer.js        # Page footer
+  ├── layouts/             # Page layout wrappers
+  │   └── MainLayout.js    # Main application layout
+  ├── pages/               # Application pages
+  │   ├── Home.js          # Landing page
+  │   ├── LoginPage.jsx    # User login
+  │   ├── RegisterPage.jsx # User registration
+  │   ├── StudyPage.jsx    # AI study interface
+  │   ├── MaterialsPage.jsx# File upload and materials
+  │   ├── ProfilePage.jsx  # User profile and progress
+  │   ├── About.js         # About page
+  │   └── NotFound.js      # 404 error page
+  ├── hooks/               # Custom React hooks
+  │   ├── useFetch.js      # Data fetching hook
+  │   └── useLocalStorage.js # Local storage management
+  ├── App.js              # Main application component
+  └── index.js            # Application entry point
+```
 
 ## Installation
 
-To install the project:
-
 ```bash
-# Install dependencies
+git clone https://github.com/VirtusRnD/i_Gizmo.git
+cd i_Gizmo/frontend
 npm install
-
-# Start the development server
 npm start
 ```
 
-## Development Guide
+## Scripts
 
-### Creating Components
+```bash
+npm start          # Development server
+npm run build      # Production build
+npm test           # Run tests
+```
 
-Components should be created in the `src/components` folder. For each component:
+## Dependencies
 
-1. A JS file with the component name (e.g., `Button.js`)
-2. A component-specific CSS file (e.g., `Button.css`)
+### Core
 
-### Adding Pages
+- React (^18.2.0)
+- React Router DOM (^6.11.2)
+- React Icons (^5.5.0)
+- Lucide React (^0.525.0)
 
-To add a new page:
+### Styling
 
-1. Create a page component in the `src/pages` folder
-2. Add the route definition in the `App.js` file
+- Tailwind CSS (^3.4.4)
+- PostCSS (^8.4.39)
+- Autoprefixer (^10.4.19)
 
-### Style Management
+## Routes
 
-- General styles are defined in `src/index.css`
-- Component-specific styles are kept in the related CSS file
-- CSS variables are defined in `:root`
+```
+/              # Home page
+/login         # User login
+/register      # User registration
+/materials     # File upload
+/study         # AI chat interface
+/profile       # User dashboard
+/about         # About page
+```
 
-## Best Practices
+## CSS Architecture
 
-- Keep components small and follow the single responsibility principle
-- Document props and perform type checking
-- Extract repetitive code into custom hooks
-- Manage page layouts in layout components
-- Collect API requests in the service layer 
+- Component-specific CSS files
+- Tailwind utility classes
+- CSS variables for theming
+- Responsive breakpoints: mobile (<768px), tablet (768-1024px), desktop (>1024px)
+
+## Custom Hooks
+
+### useFetch
+
+```javascript
+const { data, loading, error } = useFetch("/api/endpoint");
+```
+
+### useLocalStorage
+
+```javascript
+const [value, setValue] = useLocalStorage("key", defaultValue);
+```
+
+## Environment Variables
+
+Create `.env` file:
+
+```
+REACT_APP_API_URL=your_api_url
+REACT_APP_VERSION=1.0.0
+```
+
+## Development
+
+### Component Structure
+
+```javascript
+import React from "react";
+import "./Component.css";
+
+const Component = ({ prop1, prop2 }) => {
+  return <div className="component-container">{/* content */}</div>;
+};
+
+export default Component;
+```
+
+### Code Style
+
+- Functional components with hooks
+- Consistent naming conventions
+- Component-specific CSS files
+
+## Troubleshooting
+
+- **Module not found**: `npm install`
+- **Port conflicts**: `PORT=3001 npm start`
+- **Build errors**: `npm start -- --reset-cache`
+
+## Team
+
+VirtusRnD - i-Gizmo educational platform
